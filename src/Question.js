@@ -14,7 +14,7 @@ class Question extends Component {
   
   render() {
     return (
-      <div className="Question" style={{ flex:1, display:'flex', alignItems:'center' }}>
+      <div className="Question" style={{ flex:1, display:'flex', alignItems:'center', overflowY:'auto' }}>
         <div>
           <Typography variant="headline" gutterBottom style={{ fontSize: '2rem', fontWeight: 300 }}>
             Q{this.props.number} <div dangerouslySetInnerHTML={{ __html:this.props.heading }} />

@@ -16,7 +16,7 @@ const data = [
            <div>詳情請參考<a href='http://sab.tycg.gov.tw/home.jsp?id=30714&parentpath=0%2C30713&mcustomize=onemessage_view.jsp&dataserno=201503100002&aplistdn=ou=data,ou=childcarenew,ou=chsocial,ou=ap_root,o=tycg,c=tw&toolsflag=Y' target='_blank'>「桃園市政府社會局桃園市育兒津貼公告」</a></div>"
   }, {
     heading: "<div>是否符合下列條件：\
-      <ul style='text-align:left;'> \
+      <ul style='text-align:left;font-size:1.5rem;'> \
         <li>家戶綜合所得稅稅率未達 20%</li> \
         <li>育有未滿二歲兒童</li> \
         <li>未領取該名兒童(軍保、公保、就業保險)育嬰留職停薪津貼</li> \

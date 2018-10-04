@@ -26,23 +26,23 @@ class Result extends Component {
     historyQuestion.forEach((val, i) => {
       console.log(val)
       if (val === 0 && historyAnswer[i] === "yes")
-        result.push({ primary:"每月 $3000，領到 3 歲", secondary:"舊制育兒津貼" });
+        result.push({ primary:"每月 $3000，領到 3 歲", secondary:"舊制育兒津貼(繼續領)" });
       else if (val === 1 && historyAnswer[i] === "no")
-        result.push({ primary:"每月 $3000，領到 2 歲", secondary:"新制育兒津貼" });
+        result.push({ primary:"每月 $3000，領到 2 歲", secondary:"新制育兒津貼(需申請)" });
       else if (val === 2 && historyAnswer[i] === "no")
-        result.push({ primary:"每月 $3000，領到 2 歲", secondary:"新制育兒津貼" });
+        result.push({ primary:"每月 $3000，領到 2 歲", secondary:"新制育兒津貼(需申請)" });
       else if (val === 3 && historyAnswer[i] === "public_baby_care_center")
-        result.push({ primary:"每月 $3000，領到 2 歲", secondary:"新制托育補助" });
+        result.push({ primary:"每月 $3000，領到 2 歲", secondary:"新制托育補助(需申請)" });
       else if (val === 3 && historyAnswer[i] === "family_care")
-        result.push({ primary:"每月 $3000，領到 2 歲", secondary:"新制育兒津貼" });
+        result.push({ primary:"每月 $3000，領到 2 歲", secondary:"新制育兒津貼(需申請)" });
       else if (val === 4 && historyAnswer[i] === "yes")
-        result.push({ primary:"每月 $8000，領到 2 歲", secondary:"新制托育補助" });
+        result.push({ primary:"每月 $8000，領到 2 歲", secondary:"新制托育補助(需申請)" });
       else if (val === 4 && historyAnswer[i] === "no")
-        result.push({ primary:"每月 $3000，領到 2 歲", secondary:"新制育兒津貼" });
+        result.push({ primary:"每月 $3000，領到 2 歲", secondary:"新制育兒津貼(需申請)" });
       else if (val === 5 && historyAnswer[i] === "yes")
-        result.push({ primary:"每月 $7000，領到 2 歲", secondary:"新制托育補助" });
+        result.push({ primary:"每月 $7000，領到 2 歲", secondary:"新制托育補助(需申請)" });
       else if (val === 5 && historyAnswer[i] === "no")
-        result.push({ primary:"每月 $3000，領到 2 歲", secondary:"新制育兒津貼" });
+        result.push({ primary:"每月 $3000，領到 2 歲", secondary:"新制育兒津貼(需申請)" });
     });
     
     return (
@@ -78,6 +78,9 @@ class Result extends Component {
           重新作答
         </Button>
         <Typography variant="subheading" gutterBottom align="left" style={{backgroundColor:'#e6e6e6',padding:'16px',fontWeight:300,marginTop:'16px'}}>
+          <div><a href="http://sab.tycg.gov.tw/home.jsp?id=30714&parentpath=0%2C30713&mcustomize=onemessage_view.jsp&dataserno=201208290022&aplistdn=ou=data,ou=childcarenew,ou=chsocial,ou=ap_root,o=tycg,c=tw&toolsflag=Y" target='_blank' rel="noopener noreferrer">新制育兒津貼申請方式</a></div>
+          <div><a href="http://sab.tycg.gov.tw/home.jsp?id=30714&parentpath=0,30713&mcustomize=onemessages_view.jsp&dataserno=201807310001&aplistdn=ou=data,ou=childcarenew,ou=chsocial,ou=ap_root,o=tycg,c=tw&toolsflag=Y" target='_blank' rel="noopener noreferrer">新制托育補助申請方式</a></div>
+          <br />
           <div>其他問題請洽桃園市社會局婦女福利及兒童托育科</div>
           <div>03-332-2101 轉 6317-18、6424-27 或 03-3390702</div>
         </Typography>
